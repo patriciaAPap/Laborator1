@@ -18,7 +18,8 @@ namespace Lab1Ex3
 
             int numarIntreg = int.Parse(Console.ReadLine());
 
-            int lastNumber = numarIntreg % 10;
+            long lastNumber = (int)numarIntreg % 10;
+            
 
             Console.WriteLine("Ultima cifra a numarului intreg introdus este " + lastNumber + ".");
 
