@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lib1Ex6
+namespace Lib1Ex9
 {
     class Program
     {
