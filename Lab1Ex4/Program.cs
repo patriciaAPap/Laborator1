@@ -16,18 +16,32 @@ Scrieti un program care va afisa semnul unui numar citit de la tastatura
 • Daca numarul este 0, va afisa “0”*/
 
 
-            Console.WriteLine("Introudceti numerele pentru media aritmetica:");
+            Console.WriteLine("Introudceti un numar:");
 
-            int primulNumar = int.Parse(Console.ReadLine());
+            int numarIntrodus = int.Parse(Console.ReadLine());
 
-            int alDoileaNumar = int.Parse(Console.ReadLine());
+            if (numarIntrodus == 0)
+            {
 
-            int alTreileaNumar = int.Parse(Console.ReadLine());
+                Console.WriteLine("0");
 
-            int mediaAritmeticaATreiNumere = (primulNumar + alDoileaNumar + alTreileaNumar) / 3;
+            }
 
+            else
 
-            Console.WriteLine("Media aritmetica este " + mediaAritmeticaATreiNumere + ".");
+            {
+                if (numarIntrodus%2 == 0)
+                {
+                    Console.WriteLine("+");
+                }
+
+                else
+                {
+                    Console.WriteLine("-");
+                }
+
+            }
+
 
             Console.ReadKey();
 
