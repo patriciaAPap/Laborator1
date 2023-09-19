@@ -18,34 +18,32 @@ Scrieti un program care va afisa semnul unui numar citit de la tastatura
 
             Console.WriteLine("Introudceti un numar:");
 
-            int numarIntrodus = int.Parse(Console.ReadLine());
+            double numarIntrodus = double.Parse(Console.ReadLine());
 
             if (numarIntrodus == 0)
             {
-
                 Console.WriteLine("0");
-
+                Console.ReadKey();
+            } 
+            
+            else if (numarIntrodus > 0)
+            {
+                Console.WriteLine("+");
+                Console.ReadKey();
             }
 
             else
-
             {
-                if (numarIntrodus%2 == 0)
-                {
-                    Console.WriteLine("+");
-                }
-
-                else
-                {
-                    Console.WriteLine("-");
-                }
+                Console.WriteLine("-");
+                Console.ReadKey();
 
             }
 
+        }
 
-            Console.ReadKey();
+
 
 
         }
     }
-}
+
